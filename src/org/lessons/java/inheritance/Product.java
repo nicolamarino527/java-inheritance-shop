@@ -71,7 +71,9 @@ public class Product {
 
     @Override
     public String toString() {
-        return code + "-" + name;
+        return String.format("-----product info----- \ncode: %d  \nname: %s \nbrand: %s \nprice: %s$  \ntax: %s", code,
+                this.name, this.brand,
+                this.price.setScale(2, RoundingMode.DOWN), this.iva.setScale(2, RoundingMode.DOWN));
     }
 
 }

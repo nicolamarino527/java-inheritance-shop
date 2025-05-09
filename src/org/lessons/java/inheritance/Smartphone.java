@@ -30,4 +30,9 @@ public class Smartphone extends Product {
         this.memoryCapacity = newMemory;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\nmemory: " + getMemory() + "Gb" + "\nimei: " + getImei();
+    }
+
 }

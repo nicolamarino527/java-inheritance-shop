@@ -29,4 +29,9 @@ public class Television extends Product {
     public void setInches(int newInches) {
         this.inches = newInches;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\ninches: " + getInches() + " \nsmart tv: " + isSmart();
+    }
 }
